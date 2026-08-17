@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="hero" id="home">
-    <div class="container">
-      <nav class="navigation" aria-label="Main navigation">
+  <div class="hero" id="home">
+    <header class="header">
+      <nav class="navigation container" aria-label="Main navigation">
         <ul class="navigation__list">
           <li><a class="navigation__link navigation__link--active" href="#home">Home</a></li>
           <li><a class="navigation__link" href="#about">About</a></li>
@@ -21,17 +21,21 @@
           <li><a class="navigation__link" href="#contacts">Contacts</a></li>
         </ul>
       </nav>
+    </header>
 
-      <div class="hero__content">
-        <h1 class="hero__title">Design and Layout</h1>
-        <p class="hero__text">
-          Lorem Ipsum is a placeholder text commonly used in printing and web design.
-          Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
-        </p>
-        <a class="button" href="#contacts">Write to me</a>
+    <section class="hero__section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Design and Layout</h1>
+          <p class="hero__text">
+            Lorem Ipsum is a placeholder text commonly used in printing and web design.
+            Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
+          </p>
+          <a class="button" href="#contacts">Write to me</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </section>
+  </div>
 
   <main>
     <section class="about" id="about">

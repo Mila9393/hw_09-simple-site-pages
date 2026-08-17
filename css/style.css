@@ -3,6 +3,7 @@
   --color-text: #000000;
   --color-muted: #727272;
   --color-accent: #34547a;
+  --color-accent-hover: #2a4563;
   --color-light: #eeeff1;
   --color-white: #ffffff;
   --container-width: 1110px;
@@ -73,11 +74,23 @@ img {
   line-height: 1.4;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: color 0.2s ease;
 }
 
 .navigation__link--active {
   color: var(--color-accent);
   font-weight: 500;
+}
+
+.navigation__link:hover,
+.navigation__link:focus-visible {
+  color: var(--color-accent);
+}
+
+.navigation__link:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
 }
 
 .hero__content {
@@ -113,6 +126,12 @@ img {
   color: var(--color-white);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--color-accent-hover);
 }
 
 .about {
