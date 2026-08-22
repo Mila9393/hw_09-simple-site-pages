@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Site with SCSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="hero" id="home">
+    <header class="header">
+      <nav class="navigation container" aria-label="Main navigation">
+        <ul class="navigation__list">
+          <li><a class="navigation__link navigation__link--active" href="#home" aria-current="page">Home</a></li>
+          <li><a class="navigation__link" href="#about">About</a></li>
+          <li><a class="navigation__link" href="#works">Works</a></li>
+          <li><a class="navigation__link" href="#process">Process</a></li>
+          <li><a class="navigation__link" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero__section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Design and Layout</h1>
+          <p class="hero__text">
+            Lorem Ipsum is a placeholder text commonly used in printing and web design.
+            Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
+          </p>
+          <a class="button" href="mailto:ostap.ivanenko@example.com">Write to me</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="about" id="about">
+      <div class="section-heading">
+        <h2 class="section-heading__title">About Me</h2>
+        <p class="section-heading__text">
+          Lorem Ipsum is a placeholder text commonly used in printing and web design.
+          Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
+        </p>
+      </div>
+    </section>
+
+    <section class="numbers" id="works" aria-label="Completed projects">
+      <div class="container numbers__list">
+        <div class="numbers__item">
+          <img class="numbers__icon" src="images/project.svg" alt="" width="50" height="50">
+          <div><strong>40+</strong><span>projects</span></div>
+        </div>
+        <div class="numbers__item">
+          <img class="numbers__icon" src="images/project.svg" alt="" width="50" height="50">
+          <div><strong>40+</strong><span>projects</span></div>
+        </div>
+        <div class="numbers__item">
+          <img class="numbers__icon" src="images/project.svg" alt="" width="50" height="50">
+          <div><strong>40+</strong><span>projects</span></div>
+        </div>
+        <div class="numbers__item">
+          <img class="numbers__icon" src="images/project.svg" alt="" width="50" height="50">
+          <div><strong>40+</strong><span>projects</span></div>
+        </div>
+        <div class="numbers__item">
+          <img class="numbers__icon" src="images/project.svg" alt="" width="50" height="50">
+          <div><strong>40+</strong><span>projects</span></div>
+        </div>
+        <div class="numbers__item">
+          <img class="numbers__icon" src="images/project.svg" alt="" width="50" height="50">
+          <div><strong>40+</strong><span>projects</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="section-heading">
+        <h2 class="section-heading__title">How I Work</h2>
+        <p class="section-heading__text">
+          Lorem Ipsum is a placeholder text commonly used in printing and web design.
+          Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
+        </p>
+      </div>
+
+      <div class="video-preview">
+        <iframe
+          class="video-preview__video"
+          src="https://www.youtube.com/embed/6njJZT-GUUE?start=17"
+          title="YouTube video used by the teacher in Simple Site"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__content">
+      <p class="footer__name">Ostap Ivanenko</p>
+      <p class="footer__copyright">© 2018. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
