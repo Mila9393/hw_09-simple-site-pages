@@ -163,14 +163,17 @@ img {
   width: 225px;
   height: 65px;
   margin-top: 60px;
+  border: 2px solid #243a55;
   background-color: #34547a;
   color: #ffffff;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: background-color 0.2s ease;
+  animation: button-color-flow 3s ease-in-out infinite alternate;
+  transition: box-shadow 0.2s ease, filter 0.2s ease;
 }
 .button:hover, .button:focus-visible {
-  background-color: #2a4563;
+  box-shadow: 0 8px 18px rgba(36, 58, 85, 0.24);
+  filter: brightness(1.08);
 }
 .button:focus-visible {
   outline: 2px solid #34547a;
@@ -183,7 +186,22 @@ img {
     margin-top: 40px;
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    animation: none;
+  }
+}
 
+@keyframes button-color-flow {
+  from {
+    border-color: #243a55;
+    background-color: #34547a;
+  }
+  to {
+    border-color: #3f356f;
+    background-color: #5b4f9b;
+  }
+}
 .about {
   min-height: 359px;
   padding-top: 106px;
